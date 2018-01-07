@@ -56,4 +56,15 @@ console.log(sum);
            
   //exercise four
            
-   
+   while (true) {
+     system.out.printIn("What time of day is it?");
+     n= input.nextint ();
+     
+    if (n= "morning")
+      console.log ("Since it is morning, you should be eating breakfast.  We suggest eggs and toast.");
+    
+    else if (n = "afternoon")
+      console.log ("Since it is afternoon, you should be eating lunch.  We suggest a salad.")
+     
+     else if (n = "evening")
+       console.log ("Since it is evening, you should be eating dinner.  We suggest chicken and rice.")
