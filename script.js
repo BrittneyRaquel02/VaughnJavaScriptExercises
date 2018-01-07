@@ -35,3 +35,25 @@ console.log(sum);
 
 
 //exercise three
+  ArrayList list- new ArrayList ()
+    while (true) {
+      System.out.println("Would you like to print your name?");
+      n = input.nextInt();
+ 
+      if (n === yes) {
+      System.out.println("Your Name");
+      input ("#")
+      list.add (input);
+      count ++
+      }
+       for( System.out.println("#" + "!");
+        continue;
+      }
+      else {
+        break;
+           
+           
+           
+  //exercise four
+           
+   
