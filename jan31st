@@ -1,0 +1,15 @@
+var list = [1,2,3];
+
+for(var i=0; i<list.length; i++){
+  console.log(list[i]);
+}
+how to write out the entire list 
+
+
+function incrementNumbers(numbers){
+  for (var i=0; i<numbers.length; i++){
+    numbers [i]++;
+  }
+  return numbers;
+}
+
