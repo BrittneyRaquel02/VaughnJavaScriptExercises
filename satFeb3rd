@@ -39,6 +39,9 @@ console.log(diner, cafe);
 //OOP in JS
 
 
+
+
+
 class Restaurant {
   constructor(numberOfTables, hasPatio){
    this.totalTables  = numberOfTables;
