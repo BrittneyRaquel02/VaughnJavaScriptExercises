@@ -1,0 +1,16 @@
+function makeCounter(i){
+  return function(){
+    i++;
+    console.log(i);
+  }
+}
+
+var counter1 = makeCounter(0);
+var counter2 = makeCounter(7);
+
+counter1();
+counter1();
+counter2();
+counter2();
+
+//this discusses why you would need two vars to be called
