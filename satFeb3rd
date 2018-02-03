@@ -37,3 +37,73 @@ var cafe = new Restaurant (20, false);
 console.log(diner, cafe);
 
 //OOP in JS
+
+
+class Restaurant {
+  constructor(numberOfTables, hasPatio){
+   this.totalTables  = numberOfTables;
+   this.reservedTable = [];
+   this.isOpen = true;
+   this.patio = hasPatio;
+  }
+    reserveTable(tableNumber){
+  this.reservedTable.push(tableNumber);
+  }
+listOpenTables(){ 
+  console.log(this.totalTable - this.reservedTable.length);
+}
+}
+
+class LuxeryRestaurant extends Restaurant {
+  constructor(config){
+    super(config);
+   this.hasBar = config.hasBar;
+   this.privateRoom = config.privateRoom
+   this.reservationRequired = config.reservationRequired
+  }
+}
+
+var options = {
+  totalTables: 10,
+  patio: true,
+  hasBar: 10,
+  privateRoom: 2,
+  reservationRequired: true
+  
+};
+var diner = new Restaurant(10, true);
+diner.reserveTable(1);
+diner.reserveTable(2);
+diner.listOpenTables();
+console.log(diner)
+
+
+var luxery = new LuxeryRestaurant({totalTables: 10, patio: true})
+console.log(luxery);
+luxery.listOpenTables();
+
+
+
+class Counter {
+  constructor(start){
+    this.start = start;
+  }
+  count(){
+    this.start++;
+    console.log(this.start);
+  }
+}
+
+var counter1 = new Counter(1);
+counter1.count();
+
+class CounterByTwo extends Counter {
+  constructor(start) {
+    super (start);
+  }
+  count(){
+    this.start += 2;
+    console.log(this.start);
+  }
+}
+//excercise
