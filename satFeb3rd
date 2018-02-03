@@ -7,3 +7,33 @@
 })();
 
 ///iife's are to keep you from overriding or polluting the global space 
+
+
+class Restaurant {
+  constructor(numberOfTables, hasPatio){
+   this.totalTables  = numberOfTables;
+   this.isOpen = true;
+   this.patio = hasPatio;
+  }
+}
+
+
+class Counter {
+  constructor(startCount){
+    this.startCount = startCount;
+  }
+  count(){
+    this.startCount++;
+    console.log(this.startCount);
+  }
+}
+
+var counter1 = new Counter(7);
+counter1.count();
+counter1.count();
+
+var diner = new Restaurant(10, true);
+var cafe = new Restaurant (20, false);
+console.log(diner, cafe);
+
+//OOP in JS
