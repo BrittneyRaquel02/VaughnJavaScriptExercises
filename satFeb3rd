@@ -1,0 +1,9 @@
+(function(){
+  var myName = 'ivan';
+  var print = function(name){
+    console.log(name);
+  }
+  print(myName);
+})();
+
+///iife's are to keep you from overriding or polluting the global space 
