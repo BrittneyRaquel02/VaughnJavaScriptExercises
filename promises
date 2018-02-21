@@ -1,0 +1,21 @@
+let myName = 'Brittney';
+
+const p = new Promise(function(resolve, reject){
+  setTimeout(function(){
+  myName = "Sarah";
+  reject(myName);
+}, 2000);
+});
+
+p.then(function(result){
+  console.log(result);
+}, function(err){
+  console.log(err);
+});
+
+p.then(function(result){
+  console.log(result);
+}).catch(function(err){
+  console.log('ERROR', err);
+});
+   
