@@ -19,3 +19,34 @@ p.then(function(result){
   console.log('ERROR', err);
 });
    
+//they are important to avoid multiple call backs
+
+
+const lights = [
+  {on: true, location: 'hallway', id: 1},
+  {on: false, location: 'bedroom', id: 2},
+  {on: false, location: 'kitchen', id: 3}
+  ];
+  
+  const lightsOff = lights.filter(function(lights){
+    return !lights.on;
+  });
+  
+  //filter if you want an array based on a condition but not 0-50
+  
+  const id3 = lights.find(function(lights){
+    return !lights.on;
+  });
+  
+  //do the same as filter but for one item
+  
+  const locations = lights.map(function(){
+    return lights.location;
+  });
+  
+  //take an array and create a new array for every item in the array
+  
+  console.log(lights);
+  console.log(lightsOff);
+  console.log(locations);
+  
